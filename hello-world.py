@@ -1,7 +1,7 @@
-#第一步，输出hello-world
+﻿#第一步，输出hello-world
 #注释说明，单行注释采用#
 #python没有块级注释，所以现在推荐的多行注释也是采用的#
-print("Hello World!")
+print "Hello World!"
 
 
 #print函数
@@ -23,3 +23,23 @@ if True:
 else:
 	print ("False")
 
+#Python语句中一般以新行作为语句的结束符。但是我们可以使用斜杠（\）将一行的语句分为多行显示，如下所示：
+total = 2 + \
+        3 + \
+        4
+
+#语句中包含[], {} 或 () 括号就不需要使用多行连接符。如下实例：
+days = ['Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday']
+
+#Python可以在同一行中使用多条语句，语句之间使用分号(;)分割，以下是一个简单的实例：
+import sys; x = 'foo'; sys.stdout.write(x + '\n')
+
+#缩进相同的一组语句构成一个代码块，我们称之代码组。像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。
+#我们将首行及后面的代码组称为一个子句(clause)。如下实例：
+if 'expression' : 
+   1 
+elif 'expression' :  
+   2  
+else :  
+   3 
